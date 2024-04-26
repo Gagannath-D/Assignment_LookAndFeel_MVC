@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediplus Login</title>
+    <link rel="icon" type="image/x-icon" href="@Url.Content("~/images/logo.png")">
+    <link rel="stylesheet" href="@Url.Content("~/css/loginstyle.css")">
+</head>
+<body>
+    <img class="logo1" src="@Url.Content("~/images/sidelogo.png")" alt="">
+    <div class="contact-container" style="background-image: url(@Url.Content("~/images/bg.png")">
+       
+        <div class="right">
+            <h1 class="title">Sign Into Account</h1>
+            <img class="logo" src="@Url.Content("~/images/logo.png")" alt="">
+            <div class="form-container">
+                <div class="username">
+                    <img class="icon email-icon" src="~/images/email.png" alt="">
+                    <input type="email" class="user-input" placeholder="E-Mail">
+                </div>
+                <div class="password">
+                    <img class="icon password-icon" src="~/images/password.png" alt="">
+                    <input type="password" class="pass-input" placeholder="Password">
+                </div>
+                <div class="keepme">
+                    <input type="checkbox">
+                    Keep Me Logged In
+                </div>
+                <button type="button" onclick="redirectToPage()">Go!</button>
+                <script>
+                    function redirectToPage() {
+                        window.location.href = "@Url.Action("mediplus")";
+                    }
+                </script>
+                <a href="#" class="link">Forgot Password</a>
+                <div>
+                    <span>Don't have an account yet?</span>
+                    <a href="@Url.Action("Signup")">Signup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

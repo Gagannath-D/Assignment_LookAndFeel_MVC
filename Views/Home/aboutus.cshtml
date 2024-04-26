@@ -1,0 +1,143 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/main.css")" />
+    <noscript><link rel="stylesheet" href="@Url.Content("~/assets/css/noscript.css")" /></noscript>
+    <link rel="icon" type="image/x-icon" href="@Url.Content("~/images/logo.png")">
+    <link rel="stylesheet" href="@Url.Content("/css/doctorstyle.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/aboutstyle.css")">
+
+</head>
+
+<body style="background-image: url(@Url.Content("~/images/background2.jpg")">
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="@Url.Action("mediplus", "Home")">Welcome</a></li>
+                    <li><a href="@Url.Action("doctorinfo", "Home")">Doctors</a></li>
+                    <li><a href="@Url.Action("datachart", "Home")">Patient Statistics</a></li>
+                    <li><a href="@Url.Action("aboutus", "Home")">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="about-us">
+        <h1 class="heading">About us</h1>
+    </div>
+
+
+
+
+    <div class="container8">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="@Url.Content("~/images/friend2.png")" alt="Friend 1" style="width:300px;height:300px;">
+                </div>
+
+                <div class="flip-card-back">
+                    <p style="font-size: smaller;">
+                        I'm <strong style="color: blueviolet;">Madhu Kiran</strong>,played a key role in developing the Appointment and Data Visualization pages.
+                        For the Appointment Booking page, I created a user-friendly interface for inputting personal details and incorporated
+                        interactive features for easy editing. In the Data Visualization page, I designed charts and ERD for effective data management.Using CSS, I ensured a polished web aesthetic. Grateful for the team's collaborative effort and support.</br><a href="https://github.com/madhukiran2" style="color: blue">GitHub</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="@Url.Content("~/images/friend1.png")" alt="Friend 1" style="width:300px;height:300px;">
+                </div>
+
+                <div class="flip-card-back">
+                    <p style="font-size: smaller;">
+                        I'm <strong style="color: blueviolet;">Pavan Pabba</strong>, Experienced Data Analyst.I specialize in MPP databases,ETL tools and Visualization tools.Proficient in Python.I'm a certified AWS Solutions Architect Associate.
+                        In the Mediplus project, I led the design of webpages using HTML,CSS,and JavaScript,focusing on signup, signin, and index.html pages.I enabled CRUD operations and javascript elements,collaborating closely with my team to ensure timely completion.</br><a href="https://github.com/Pavan-Kumar-Pabba" style="color: blue">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="@Url.Content("~/images/friend3.jpeg")" alt="Friend 1" style="width:300px;height:300px;">
+                </div>
+
+                <div class="flip-card-back">
+                    <p style="font-size: smaller;">
+                        I'm <strong style="color: blueviolet;">Sravanth</strong>,
+                        Experinced Data Analyst.Proven ability to translate data insights into strategic decisions.
+                        Seeking to leverage my analytical skills in a dynamic and innovative setting.
+                        My contributions include designing the "doctorsinfo" webpage which uses the search function by implememting
+                        CRUD operations and also the "aboutus" webpage consisitng of our team-mates information using HTML and CSS.</br><a href="https://github.com/sravanthreddipogu" style="color: blue">GitHub</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="@Url.Content("~/images/friend4.png")" alt="Friend 1" style="width:300px;height:300px;">
+                </div>
+
+                <div class="flip-card-back">
+                    <p style="font-size: smaller;">
+                        <strong style="color: blueviolet;">I'm Gagan</strong>,
+                        Experienced Data Engineer.
+                        I specialize in turning raw data into actionable insights.I played a pivotal role in designing the Welcome and Hospital pages,
+                        including an interactive navigation menu for the Welcome page. Working with JS,
+                        I facilitated read operations on  Hospital Data page and enhanced the web look using CSS.
+                        Team collaboration was crucial throughout the project, with everyone providing support when necessary.</br><a href="https://github.com/Gagannath-D" style="color: blue">GitHub</a>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Add more flip cards for other friends -->
+    </div>
+    <div class="mission-statement">
+        <h2>Our Purpose</h2>
+
+        <p>Our purpose from Mediplus webapplication is to provide compassionate and comprehensive healthcare services to our community. With a focus on personalized care, we strive to create a welcoming and healing environment for every patient. From routine check-ups to specialized treatments, our dedicated team is committed to promoting your well-being and ensuring that you receive the highest quality of care.At Mediplus, your health is our priority. </p>
+        <h3>Future Scope:</h3>
+        <p>Moving forward, we envision expanding the capabilities of the Mediplus web application to include features such as telemedicine consultations, appointment scheduling enhancements, and patient health record integration for seamless continuity of care. Additionally, incorporating machine learning algorithms for predictive analytics and personalized treatment recommendations is on our horizon. Our aim is to continually evolve the platform to meet the evolving needs of our community, while maintaining our unwavering commitment to exceptional healthcare delivery.</p>
+    </div>
+
+    <div class="data-model">
+        <h2>Data Model</h2>
+        <img src="@Url.Content("~/images/project_data_model.png")" alt="" style="width:800px;height:400px;">
+        <h2> Git Log</h2>
+        <img src="@Url.Content("~/images/gitlog.png")" alt="" style="width:800px;height:400px;">
+        <img src="@Url.Content("~/images/gitchanges.png")" alt="" style="width:800px;height:400px;">
+    </div>
+    <footer class="footer2">
+        <ul>
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="http://myweb.usf.edu/~pabba1/Portfolio/resume.html">Group-5 DIS</a></li>
+        </ul>
+    </footer>
+    <script src="@Url.Content("~/js/hospitalscript.js")"></script>
+    <script src="@Url.Content("~/assets/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/jquery.scrollex.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/jquery.scrolly.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/browser.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/breakpoints.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/util.js")"></script>
+    <script src="@Url.Content("~/assets/js/main.js")"></script>
+</body>
+</html>

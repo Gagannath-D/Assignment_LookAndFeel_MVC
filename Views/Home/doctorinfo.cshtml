@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Information</title>
+    <link rel="icon" type="image/x-icon" href="images\logo.png">
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/main.css")" />
+    <noscript><link rel="stylesheet" href="@Url.Content("~/assets/css/noscript.css")" /></noscript>
+    <link rel="icon" type="image/x-icon" href="@Url.Content("~/images/logo.png")">
+    <link rel="stylesheet" href="@Url.Content("~/css/doctorstyle.css")">
+</head>
+<body style="background-image: url(@Url.Content("~/images/background2.jpg")">
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="@Url.Action("mediplus", "Home")">Welcome</a></li>
+                    <li><a href="@Url.Action("doctorinfo", "Home")">Doctors</a></li>
+                    <li><a href="@Url.Action("datachart", "Home")">Patient Statistics</a></li>
+                    <li><a href="@Url.Action("aboutus", "Home")">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="doctors">
+        <h1>Doctors Information</h1>
+    </div>
+    <input type="text" id="searchInput">
+    <button onclick="searchDoctor()">Search</button>
+    <table id="doctorTable">
+        <thead>
+            <tr>
+                <th>Reg ID</th>
+                <th>Name</th>
+                <th>Sex</th>
+                <th>Degree</th>
+                <th>Specialization</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody id="doctorData">
+            <!-- Table data will be dynamically populated here -->
+        </tbody>
+    </table>
+    <script src="@Url.Content("~/js/doctorscript.js")"></script>
+
+    <footer class="footer2">
+        <ul>
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="http://myweb.usf.edu/~pabba1/Portfolio/resume.html">Group-5 DIS</a></li>
+        </ul>
+    </footer>
+
+
+
+   
+    <!-- Scripts -->
+    <script src="@Url.Content("~/assets/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/jquery.scrollex.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/jquery.scrolly.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/browser.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/breakpoints.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/util.js")"></script>
+    <script src="@Url.Content("~/assets/js/main.js")"></script>
+</body>
+</html>
