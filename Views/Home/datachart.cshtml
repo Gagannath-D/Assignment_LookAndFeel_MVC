@@ -121,7 +121,7 @@
         </div>
 
         <script>
-            // Data for service chart
+            // Data for service chart//
             var serviceData = {
                 labels: ["Primary Care", "Speciality Care", "Emergency Care", "Diagnostic Services", "Surgical Services", "Rehabilitation Services"],
                 datasets: [{
@@ -131,7 +131,7 @@
                 }]
             };
 
-            // Data for age chart
+            // Data for age chart//
             var ageData = {
                 labels: ["Age 0-3", "Age 3-10", "Age 10-18", "Age 18-25", "Age 25-40", "Age 40-65", "Age 66+"],
                 datasets: [{
@@ -141,7 +141,7 @@
                 }]
             };
 
-            // Service chart (Pie) 
+            // Service chart (Pie)// 
             var serviceCtx = document.getElementById('serviceChart').getContext('2d');
             var serviceChart = new Chart(serviceCtx, {
                 type: 'pie',
@@ -159,7 +159,7 @@
                 }
             });
 
-            // Age chart (Bar)
+            // Age chart (Bar) //
             var ageCtx = document.getElementById('ageChart').getContext('2d');
             var ageChart = new Chart(ageCtx, {
                 type: 'bar',
